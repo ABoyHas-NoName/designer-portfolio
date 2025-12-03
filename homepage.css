@@ -1,0 +1,252 @@
+* {
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 900px;
+    transition: .2s;
+}
+
+#root {
+    background-color: #132238;
+}
+
+#navbar {
+    position: fixed;
+    width: 100vw;
+    background: #c05791;
+    z-index: 9;
+}
+
+.span {
+    display: flex;
+    margin-left: 0;
+}
+
+.first-letter {
+    background: purple;
+    border-radius: 50%;
+    height: 100%;
+    padding: 2px 10px;
+}
+
+#nav {
+    margin-right: 0;
+}
+
+li {
+    width: 80px;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    padding: 5%;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#about {
+    background-color: #132238;
+    margin-top: 25%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    padding: 0 7%;
+    color: #FFF;
+    padding: 5%;
+}
+
+#about2 {
+    background-color: #132238;
+    margin-top: 25%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    padding: 0 7%;
+    color: #FFF;
+    padding: 5%;
+    position: relative;
+    transform: translateY(-15%);
+}
+
+#profile-img {
+    width: 2000px;
+    /* height: 300px; */
+    overflow-y: hidden;
+    /* padding: 5% 0;  */
+}
+
+#profile-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+#profile-img2 {
+    width: 2000px;
+    /* height: 300px; */
+    overflow-y: hidden;
+    /* padding: 5% 0;  */
+}
+
+#profile-img2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+#words {
+    text-align: left;
+    overflow: hidden;
+    width: 500%;
+    /* height: 380px; */
+}
+
+span a:not(#submit) {
+    text-decoration: none;
+    padding: 5px 20px;
+    color: #fff;
+    background: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+#portfolio {
+    background: #FFF;
+}
+
+#portfolio h1 {
+    text-align: center;
+}
+
+#portfolio-img {
+    max-width: 300px;
+    max-height: 400px;
+    padding: 2% 5%;
+    overflow: hidden;
+}
+
+#portfolio-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding-bottom: 30%;
+    transform: translateX(-10px);
+}
+
+#portfolio-img h2,
+#portfolio-img span {
+    position: relative;
+    bottom: 80px;
+}
+
+#contact {
+    height: 120%;
+    background-color: rgb(223, 223, 215);
+}
+
+#contact input,
+label {
+    transform: translatex(5%);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+textarea {
+    transform: translatex(1%);
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+span a#submit {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 13px;
+    background: rgb(0, 0, 0);
+    border: 1px solid black;
+    /* transform: translateY(15%); */
+    border-radius: 10px;
+}
+
+#contact-me {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+#contact-me img {
+    border-radius: 10px;
+    overflow-y: hidden;
+    max-width: 100%;
+    height: 90%;
+}
+
+#contact-me2 {
+    visibility: hidden;
+}
+
+#footer {
+    background: #132238;
+    height: 200px;
+    text-align: center;
+    color: #FFF;
+}
+
+/* @media screen and (max-width: 640px) and (min-width: 440px) {
+    /* #about #words p{
+        /* max-height: 390px; 
+        line-height: 1;
+        position: relative;
+        bottom: 20px;
+    }
+} */
+
+@media screen and (min-width:440px) {
+    #portfolio-imgs {
+        display: flex;
+        padding-bottom: 10%;
+    }
+
+    #portfolio-img {
+        overflow: hidden;
+        padding: 5%;
+    }
+
+    #portfolio-img h2 {
+        visibility: hidden;
+    }
+
+    #portfolio-img span a {
+        padding: 3% 8%;
+    }
+
+    #about2 {
+        transform: translateY(-200px);
+        height: 20%;
+    }
+
+    #contact {
+        text-align: center;
+        /* transform: translateY(-200px); */
+    }
+
+    #footer {
+        line-height: 1.8;
+    }
+
+    p {
+        line-height: 2;
+        font-size: larger;
+    }
+}
